@@ -1,0 +1,13 @@
+Paragraph A: Primește proprietățile de la selectorul de element p. Este cel mai simplu selector.
+
+Paragraph B: Primește proprietățile de la selectorul de clasă .info. Clasa are prioritate mai mare decât elementul p.
+
+Paragraph C: Primește proprietățile de la selectorul de ID #warning. ID-ul are prioritate mai mare decât clasa sau elementul.
+
+Paragraph D: Primește proprietăți de la toate regulile, dar se execută cele cu prioritate mai mare.
+
+Browserul folosește valoarea darkorange. Selectorul #warning.info este cel mai specific deoarece este o combinație dintre un ID și o clasă. ID + Clasul are prioritate mai mare decat ID-ul simplu, Clasa simplă sau Elementul.
+
+Deși #warning.info este cel mai specific selector pentru culoare, acesta nu are definită proprietatea font-family. Prin urmare, browserul caută următorul cel mai specific selector care are această proprietate, acesta fiind ID-ul #warning.
+
+Atât fișierul extern style.css, cât și regula internă din <style> folosesc același selector de element h1, deci au aceeași specificitate. În acest caz ultima regulă citită de browser este cea care se aplică.
